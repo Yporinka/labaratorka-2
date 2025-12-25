@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolve - IT решения для бизнеса</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- Блок логотипа -->
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="TechSolve" class="logo__image">
+                    <span class="logo__text">TechSolve</span>
+                </a>
+                
+                <!-- Блок навигации -->
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link nav__link_active">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Блок контактов в хедере -->
+                <div class="header__contacts">
+                    <a href="tel:+74951234567" class="phone header__phone">
+                        <i class="fas fa-phone phone__icon"></i>
+                        <span class="phone__number">+7 (495) 123-45-67</span>
+                    </a>
+                    <button class="button button_small header__callback" data-modal="callback">
+                        Заказать звонок
+                    </button>
+                </div>
+                
+                <!-- Мобильное меню (бургер) -->
+                <button class="burger header__burger" aria-label="Меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section section_theme_dark hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <!-- Блок с основной информацией -->
+                <div class="hero__info">
+                    <h1 class="hero__title">
+                        IT-решения для 
+                        <span class="hero__title-accent">вашего бизнеса</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Разрабатываем современные веб-приложения, мобильные приложения 
+                        и автоматизируем бизнес-процессы. 10+ лет на рынке IT-услуг.
+                    </p>
+                    
+                    <!-- Группа кнопок в герое -->
+                    <div class="hero__actions">
+                        <button class="button button_primary hero__button" data-modal="consult">
+                            Бесплатная консультация
+                        </button>
+                        <button class="button button_outline hero__button">
+                            Наши проекты
+                        </button>
+                    </div>
+                    
+                    <!-- Блок со статистикой -->
+                    <div class="stats hero__stats">
+                        <div class="stats__item">
+                            <div class="stats__number">150+</div>
+                            <div class="stats__label">Успешных проектов</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number">98%</div>
+                            <div class="stats__label">Довольных клиентов</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number">5 лет</div>
+                            <div class="stats__label">Гарантии на код</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Блок с изображением -->
+                <div class="hero__image-wrapper">
+                    <img src="img/hero-bg.jpg" alt="Разработка IT-решений" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <!-- Заголовок секции с модификатором -->
+            <div class="section-header services__header">
+                <h2 class="section-header__title">Наши услуги</h2>
+                <p class="section-header__subtitle">
+                    Мы предоставляем полный цикл IT-услуг от анализа до поддержки
+                </p>
+            </div>
+            
+            <!-- Сетка услуг -->
+            <div class="services__grid">
+                <!-- Карточка услуги 1 -->
+                <article class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-card__title">Веб-разработка</h3>
+                    <p class="service-card__description">
+                        Создаем современные сайты и веб-приложения 
+                        на React, Vue.js и других технологиях.
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right service-card__link-icon"></i>
+                    </a>
+                </article>
+                
+                <!-- Карточка услуги 2 -->
+                <article class="service-card service-card_highlighted">
+                    <div class="service-card__icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-card__title">Мобильные приложения</h3>
+                    <p class="service-card__description">
+                        Кроссплатформенные и нативные приложения 
+                        для iOS и Android.
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right service-card__link-icon"></i>
+                    </a>
+                </article>
+                
+                <!-- Карточка услуги 3 -->
+                <article class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-card__title">Автоматизация</h3>
+                    <p class="service-card__description">
+                        Оптимизируем бизнес-процессы с помощью 
+                        CRM, ERP и других систем.
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Подробнее 
+                        <i class="fas fa-arrow-right service-card__link-icon"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section section_theme_gray about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <!-- Блок с изображением -->
+                <div class="about__image-wrapper">
+                    <img src="img/about-team.jpg" alt="Наша команда" class="about__image">
+                </div>
+                
+                <!-- Блок с информацией -->
+                <div class="about__info">
+                    <div class="section-header about__header">
+                        <h2 class="section-header__title">Почему выбирают нас</h2>
+                        <p class="section-header__subtitle">
+                            Более 10 лет создаем IT-решения для бизнеса
+                        </p>
+                    </div>
+                    
+                    <!-- Список преимуществ -->
+                    <ul class="features about__features">
+                        <li class="features__item">
+                            <i class="fas fa-check features__icon"></i>
+                            <span class="features__text">Команда из 50+ опытных специалистов</span>
+                        </li>
+                        <li class="features__item">
+                            <i class="fas fa-check features__icon"></i>
+                            <span class="features__text">Гибкая методология разработки</span>
+                        </li>
+                        <li class="features__item">
+                            <i class="fas fa-check features__icon"></i>
+                            <span class="features__text">Прозрачная отчетность и сроки</span>
+                        </li>
+                        <li class="features__item">
+                            <i class="fas fa-check features__icon"></i>
+                            <span class="features__text">Поддержка 24/7 после сдачи проекта</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Цитата -->
+                    <blockquote class="quote about__quote">
+                        <p class="quote__text">
+                            "Наша миссия — создавать технологии, которые решают 
+                            реальные бизнес-задачи и приносят прибыль нашим клиентам."
+                        </p>
+                        <footer class="quote__author">
+                            <strong>Алексей Иванов</strong>, технический директор
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
+                <p class="cta__subtitle">
+                    Оставьте заявку и получите бесплатную консультацию 
+                    от нашего технического специалиста в течение 24 часов.
+                </p>
+                
+                <!-- Форма CTA -->
+                <form class="form cta__form">
+                    <div class="form__group">
+                        <input type="text" 
+                               class="form__input" 
+                               placeholder="Ваше имя" 
+                               required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" 
+                               class="form__input" 
+                               placeholder="Номер телефона" 
+                               required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" 
+                               class="form__input" 
+                               placeholder="Email" 
+                               required>
+                    </div>
+                    <button type="submit" class="button button_primary form__submit">
+                        Отправить заявку
+                    </button>
+                </form>
+                
+                <p class="cta__note">
+                    Нажимая кнопку, вы соглашаетесь с 
+                    <a href="#" class="cta__link">политикой конфиденциальности</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Колонка 1: Лого и описание -->
+                <div class="footer__column">
+                    <a href="#" class="logo footer__logo">
+                        <img src="img/logo.svg" alt="TechSolve" class="logo__image">
+                        <span class="logo__text">TechSolve</span>
+                    </a>
+                    <p class="footer__description">
+                        Разработка IT-решений для бизнеса с 2013 года. 
+                        Создаем технологии для вашего роста.
+                    </p>
+                    <div class="social footer__social">
+                        <a href="#" class="social__link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="VKontakte">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Колонка 2: Навигация -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Навигация</h3>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#home" class="footer-nav__link">Главная</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#services" class="footer-nav__link">Услуги</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#about" class="footer-nav__link">О нас</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#projects" class="footer-nav__link">Проекты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Колонка 3: Контакты -->
+                <div class="footer__column">
+                    <h3 class="footer__title">Контакты</h3>
+                    <address class="contacts">
+                        <div class="contacts__item">
+                            <i class="fas fa-map-marker-alt contacts__icon"></i>
+                            <span class="contacts__text">г. Москва, ул. Примерная, 15</span>
+                        </div>
+                        <div class="contacts__item">
+                            <i class="fas fa-phone contacts__icon"></i>
+                            <a href="tel:+74951234567" class="contacts__link">+7 (495) 123-45-67</a>
+                        </div>
+                        <div class="contacts__item">
+                            <i class="fas fa-envelope contacts__icon"></i>
+                            <a href="mailto:info@techsolve.ru" class="contacts__link">info@techsolve.ru</a>
+                        </div>
+                        <div class="contacts__item">
+                            <i class="fas fa-clock contacts__icon"></i>
+                            <span class="contacts__text">Пн-Пт: 9:00-18:00</span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+            
+            <!-- Нижняя часть футера -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2023 TechSolve. Все права защищены.
+                </p>
+                <div class="footer__links">
+                    <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL WINDOW ==================== -->
+    <div class="modal" id="callbackModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="modal__title">Заказать обратный звонок</h3>
+            <!-- Форма будет здесь -->
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+</body>
+</html>
